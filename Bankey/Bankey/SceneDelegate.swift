@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window : UIWindow = UIWindow(windowScene: windowScene)
-        window.rootViewController = LoginViewController()
+        window.rootViewController = OnboardingContainerViewController()
         window.makeKeyAndVisible()
         self.window = window
         print("Scene will connect to UIViewController")

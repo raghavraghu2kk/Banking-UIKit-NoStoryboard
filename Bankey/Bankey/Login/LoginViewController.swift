@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Bankey
-//
-//  Created by Raghavendra Mirajkar on 01/08/24.
-//
-
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -35,6 +28,7 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController {
+    // MARK: - Style - Login
     private func style() {
         // Always set it to false - TAMC
         // This makes it ready for autolayout - If you don't autolayout doesn't work.
@@ -66,6 +60,7 @@ extension LoginViewController {
         errorMessageLabel.isHidden = true
     }
     
+    // MARK: - Layout - Login
     private func layout() {
         view.addSubview(titleLabel)
         view.addSubview(captionLabel)
