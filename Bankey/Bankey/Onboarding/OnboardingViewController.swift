@@ -17,13 +17,14 @@ class OnboardingViewController: UIViewController {
     let label = UILabel()
     
     //MARK: - ViewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
         layout()
-        // Do any additional setup after loading the view.
     }
     
+    //MARK: - Init Method
     init(heroImageName: String, titleText: String) {
         self.heroImageName = heroImageName
         self.titleText = titleText

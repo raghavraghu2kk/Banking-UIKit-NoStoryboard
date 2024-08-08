@@ -24,10 +24,9 @@ class LoginView: UIView {
     
 }
 
-//MARK: - Styling and Layout of LoginView
-
 extension LoginView {
     
+    //MARK: - Styling
     func style() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .secondarySystemBackground
@@ -41,6 +40,7 @@ extension LoginView {
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
         usernameTextField.placeholder = "Username"
         usernameTextField.delegate = self
+        usernameTextField.text = "Kevin"
         
         //Divider view to separate the UserTextField and PasswordTextField
         dividerView.translatesAutoresizingMaskIntoConstraints = false
@@ -51,12 +51,14 @@ extension LoginView {
         passwordTextField.placeholder = "Password"
         passwordTextField.isSecureTextEntry = true
         passwordTextField.delegate = self
+        passwordTextField.text = "Welcome"
   
         // Layer refers to CA Layer used for CoreAnimation
         layer.cornerRadius = 5
         clipsToBounds = true
     }
     
+    //MARK: - Layout
     func layout() {
         stackView.addArrangedSubview(usernameTextField)
         stackView.addArrangedSubview(dividerView)

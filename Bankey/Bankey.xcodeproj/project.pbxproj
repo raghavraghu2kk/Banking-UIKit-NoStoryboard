@@ -10,6 +10,11 @@
 		4A1442822C5D4CEE00025E8D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1442812C5D4CEE00025E8D /* LoginView.swift */; };
 		4A1442862C5DBE7300025E8D /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1442852C5DBE7300025E8D /* OnboardingContainerViewController.swift */; };
 		4A1442882C5DC91100025E8D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1442872C5DC91100025E8D /* OnboardingViewController.swift */; };
+		4A14428B2C5EA4BE00025E8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14428A2C5EA4BE00025E8D /* ViewController.swift */; };
+		4A14428D2C5EA4CD00025E8D /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14428C2C5EA4CD00025E8D /* WeatherService.swift */; };
+		4A14428F2C5EA4D700025E8D /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A14428E2C5EA4D700025E8D /* Weather.swift */; };
+		4A1442912C5ED64800025E8D /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1442902C5ED64700025E8D /* DummyViewController.swift */; };
+		4A1442942C64909900025E8D /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1442932C64909800025E8D /* LocalState.swift */; };
 		4A7C60102C5BF43A00F8AA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C600F2C5BF43A00F8AA8D /* AppDelegate.swift */; };
 		4A7C60122C5BF43A00F8AA8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C60112C5BF43A00F8AA8D /* SceneDelegate.swift */; };
 		4A7C60142C5BF43A00F8AA8D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C60132C5BF43A00F8AA8D /* LoginViewController.swift */; };
@@ -20,6 +25,11 @@
 		4A1442812C5D4CEE00025E8D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4A1442852C5DBE7300025E8D /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		4A1442872C5DC91100025E8D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		4A14428A2C5EA4BE00025E8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A14428C2C5EA4CD00025E8D /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		4A14428E2C5EA4D700025E8D /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		4A1442902C5ED64700025E8D /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		4A1442932C64909800025E8D /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		4A7C600C2C5BF43A00F8AA8D /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7C600F2C5BF43A00F8AA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A7C60112C5BF43A00F8AA8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +63,7 @@
 			children = (
 				4A7C60132C5BF43A00F8AA8D /* LoginViewController.swift */,
 				4A1442812C5D4CEE00025E8D /* LoginView.swift */,
+				4A1442902C5ED64700025E8D /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -64,6 +75,24 @@
 				4A1442872C5DC91100025E8D /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4A1442892C5EA49E00025E8D /* WeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				4A14428A2C5EA4BE00025E8D /* ViewController.swift */,
+				4A14428C2C5EA4CD00025E8D /* WeatherService.swift */,
+				4A14428E2C5EA4D700025E8D /* Weather.swift */,
+			);
+			path = WeatherAPI;
+			sourceTree = "<group>";
+		};
+		4A1442922C64908000025E8D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4A1442932C64909800025E8D /* LocalState.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		4A7C60032C5BF43A00F8AA8D = {
@@ -85,6 +114,8 @@
 		4A7C600E2C5BF43A00F8AA8D /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				4A1442922C64908000025E8D /* Utils */,
+				4A1442892C5EA49E00025E8D /* WeatherAPI */,
 				4A1442842C5DBDEB00025E8D /* Onboarding */,
 				4A1442802C5D4C9E00025E8D /* Login */,
 				4A7C600F2C5BF43A00F8AA8D /* AppDelegate.swift */,
@@ -163,10 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A14428D2C5EA4CD00025E8D /* WeatherService.swift in Sources */,
 				4A7C60142C5BF43A00F8AA8D /* LoginViewController.swift in Sources */,
 				4A1442882C5DC91100025E8D /* OnboardingViewController.swift in Sources */,
+				4A1442912C5ED64800025E8D /* DummyViewController.swift in Sources */,
 				4A7C60102C5BF43A00F8AA8D /* AppDelegate.swift in Sources */,
+				4A14428F2C5EA4D700025E8D /* Weather.swift in Sources */,
+				4A1442942C64909900025E8D /* LocalState.swift in Sources */,
 				4A1442822C5D4CEE00025E8D /* LoginView.swift in Sources */,
+				4A14428B2C5EA4BE00025E8D /* ViewController.swift in Sources */,
 				4A1442862C5DBE7300025E8D /* OnboardingContainerViewController.swift in Sources */,
 				4A7C60122C5BF43A00F8AA8D /* SceneDelegate.swift in Sources */,
 			);
